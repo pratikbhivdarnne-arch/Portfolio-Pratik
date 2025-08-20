@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pratik — Aspiring Data Scientist</title>
+  <meta name="description" content="Portfolio of Pratik — Aspiring Data Scientist" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#hero">Pratik</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu" id="menuBtn" aria-label="Open Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">HI EVERYONE $$</p>
+          <h1>Pratik — <span class="accent">Aspiring Data Scientist</span></h1>
+          <p class="subtitle">Turning data into insights with clean analysis, intuitive visualizations, and practical machine learning.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="https://github.com/pratikbhivdarnne-arch" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 600 400" class="chart">
+            <defs>
+              <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="#6366f1"/>
+                <stop offset="100%" stop-color="#22d3ee"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="600" height="400" rx="24" fill="#0f172a"/>
+            <polyline fill="none" stroke="url(#grad)" stroke-width="4"
+              points="20,320 80,300 140,280 200,260 260,220 320,240 380,180 440,150 500,170 560,120" />
+            <g fill="#22d3ee">
+              <circle cx="80" cy="300" r="4"/><circle cx="140" cy="280" r="4"/>
+              <circle cx="200" cy="260" r="4"/><circle cx="260" cy="220" r="4"/>
+              <circle cx="320" cy="240" r="4"/><circle cx="380" cy="180" r="4"/>
+              <circle cx="440" cy="150" r="4"/><circle cx="500" cy="170" r="4"/>
+              <circle cx="560" cy="120" r="4"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="lead">I’m Pratik, a data science enthusiast passionate about exploring data, applying machine learning, and creating impactful visualizations.</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section muted">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Programming</h3>
+            <ul class="tags">
+              <li>Python</li><li>R</li><li>SQL</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Data Analysis</h3>
+            <ul class="tags">
+              <li>Pandas</li><li>NumPy</li><li>Excel</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Visualization</h3>
+            <ul class="tags">
+              <li>Matplotlib</li><li>Seaborn</li><li>Power BI</li><li>Tableau</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Machine Learning</h3>
+            <ul class="tags">
+              <li>scikit-learn</li><li>TensorFlow</li><li>PyTorch</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Tools</h3>
+            <ul class="tags">
+              <li>VS Code</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="muted-text">Projects are currently in progress. Here are the planned entries:</p>
+        <div class="cards">
+          <article class="card project">
+            <h3>Stock Price Predictor</h3>
+            <p>Predict stock prices from historical data using classic ML techniques.</p>
+            <p class="stack">Python • scikit-learn</p>
+            <div class="links">
+              <a class="btn small" href="#" aria-disabled="true">Repo (soon)</a>
+              <a class="btn small ghost" href="#" aria-disabled="true">Live (soon)</a>
+            </div>
+          </article>
+          <article class="card project">
+            <h3>COVID-19 Dashboard</h3>
+            <p>Interactive global trends with filters and clean charts.</p>
+            <p class="stack">Python • Plotly</p>
+            <div class="links">
+              <a class="btn small" href="#" aria-disabled="true">Repo (soon)</a>
+              <a class="btn small ghost" href="#" aria-disabled="true">Live (soon)</a>
+            </div>
+          </article>
+          <article class="card project">
+            <h3>Customer Churn Analysis</h3>
+            <p>Identify at‑risk customers with EDA and predictive modeling.</p>
+            <p class="stack">SQL • scikit-learn</p>
+            <div class="links">
+              <a class="btn small" href="#" aria-disabled="true">Repo (soon)</a>
+              <a class="btn small ghost" href="#" aria-disabled="true">Live (soon)</a>
+            </div>
+          </article>
+          <article class="card project">
+            <h3>Movie Recommendation System</h3>
+            <p>Content‑based recommendations using cosine similarity over metadata.</p>
+            <p class="stack">Python • Pandas</p>
+            <div class="links">
+              <a class="btn small" href="#" aria-disabled="true">Repo (soon)</a>
+              <a class="btn small ghost" href="#" aria-disabled="true">Live (soon)</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section muted">
+      <div class="container">
+        <h2>Education</h2>
+        <ul class="timeline">
+          <li>
+            <div class="dot"></div>
+            <div class="content">
+              <h3>B.Sc./M.C.A in Data Science (Ongoing)</h3>
+              <p class="muted-text">(CS Student)</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-cards">
+            <article class="card">
+              <h3>Email</h3>
+              <a href="mailto:pratikbhivdarnne@gmail.com">pratikbhivdarnne@gmail.com</a>
+            </article>
+            <article class="card">
+              <h3>Phone</h3>
+              <a href="tel:9011536278">9011536278</a>
+            </article>
+            <article class="card">
+              <h3>GitHub</h3>
+              <a target="_blank" rel="noopener" href="https://github.com/pratikbhivdarnne-arch">github.com/pratikbhivdarnne-arch</a>
+            </article>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <label>
+              Your Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Your Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button type="submit" class="btn primary">Send Message</button>
+            <p id="formNote" class="form-note">This demo form uses JavaScript only—no backend required.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Pratik — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

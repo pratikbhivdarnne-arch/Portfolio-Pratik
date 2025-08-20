@@ -1,0 +1,87 @@
+/* Base */
+*{box-sizing:border-box}
+:root{
+  --bg:#0b1220;
+  --card:#0f172a;
+  --muted:#0b1220;
+  --text:#e2e8f0;
+  --text-muted:#94a3b8;
+  --accent:#22d3ee;
+  --accent-2:#6366f1;
+  --border:#1f2937;
+}
+html,body{margin:0;padding:0}
+body{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:linear-gradient(180deg,#050816 0%,#0b1220 60%,#0b1220 100%);
+  line-height:1.6;
+}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:10;background:rgba(11,18,32,.7);backdrop-filter: blur(10px);border-bottom:1px solid #111}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.5px}
+.nav-links a{color:var(--text-muted);text-decoration:none;margin:0 10px;font-weight:500}
+.nav-links a:hover{color:#fff}
+.menu{display:none;background:transparent;border:1px solid var(--border);color:#fff;border-radius:8px;padding:6px 10px;cursor:pointer}
+
+/* Hero */
+.hero-section{padding:80px 0 40px}
+.hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:600;margin:0}
+h1{font-size:42px;margin:8px 0 12px}
+.subtitle{color:var(--text-muted);max-width:60ch}
+.accent{background:linear-gradient(45deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.chart{width:100%;height:auto;box-shadow:0 10px 40px rgba(0,0,0,.3);border-radius:24px}
+
+/* Sections */
+.section{padding:64px 0}
+.section.muted{background:linear-gradient(180deg,#0b1220,#0f172a)}
+h2{font-size:28px;margin:0 0 14px}
+.lead{color:var(--text);opacity:.95;max-width:75ch}
+.muted-text{color:var(--text-muted)}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
+.card h3{margin:0 0 8px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.tags li{background:#0b1328;border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:#cbd5e1;font-size:14px}
+
+.project .stack{color:#a3b2c6;margin:10px 0 12px}
+.links{display:flex;gap:8px;flex-wrap:wrap}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;border:1px solid var(--border);padding:10px 14px;text-decoration:none;color:#fff;font-weight:600}
+.btn.primary{background:linear-gradient(90deg,var(--accent-2),var(--accent));border:none}
+.btn.ghost{background:transparent}
+.btn.small{padding:8px 12px;font-size:14px}
+
+/* Timeline */
+.timeline{list-style:none;padding:0;margin:0;border-left:2px dashed #1e293b;padding-left:18px}
+.timeline li{position:relative;padding-left:8px;margin:14px 0}
+.timeline .dot{position:absolute;left:-10px;top:4px;width:12px;height:12px;background:linear-gradient(45deg,var(--accent),var(--accent-2));border-radius:999px}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:20px;align-items:start}
+.contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.contact-form{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px}
+.contact-form label{display:block;font-weight:600;margin:10px 0 6px}
+.contact-form input,.contact-form textarea{width:100%;background:#0b1328;border:1px solid #1e293b;border-radius:10px;padding:10px;color:#e2e8f0}
+.form-note{color:var(--text-muted);font-size:12px;margin-top:8px}
+
+/* Footer */
+.site-footer{border-top:1px solid #111;padding:24px 0;background:#0b1220;color:#9fb1c8;text-align:center}
+
+/* Responsive */
+@media (max-width: 900px){
+  .hero-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .contact-cards{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr;gap:16px}
+  .menu{display:block}
+  .nav-links{display:none}
+  .nav.open .nav-links{display:flex;flex-wrap:wrap;gap:10px}
+}
